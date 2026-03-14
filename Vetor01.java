@@ -17,8 +17,7 @@ public class Vetor01{
 
     }
 
-    public static void
-
+    
      
     public static void preencherAleatorio(int[] v) {
         for (int i = 0; i < v.length; i += 1) {
@@ -56,4 +55,21 @@ public class Vetor01{
             v[pos] = x;
         }
 
+        public static double calcularMedia(int[] v) {
+        int soma = 0;
+        for (int i = 0; i < v.length; i += 1) {
+            soma += v[i];
+        }
+        return (double) soma / (double) v.length;
+    }
+     public static void imprimir(int[] v) {
+        System.out.print("{");
+        if (v.length >= 1) {
+            System.out.print(" " + v[0]);
+            for (int i = 1; i < v.length; i += 1) {
+                System.out.print(", " + v[i]);
+            }
+        }
+        System.out.print(" }");
+    }
 }
